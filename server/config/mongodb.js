@@ -1,12 +1,13 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log("Database Connected");
+  } catch (error) {
+    console.error("DB connection error:", error);
+    process.exit(1);
+  }
+};
 
-    mongoose.connection.on('connected',()=>{
-        console.log("Database Connected")
-    })
-
-    await mongoose.connect(`${process.env.MONGODB_URI}/bgremove`)
-}
-
-export default connectDB
+export default connectDB;
