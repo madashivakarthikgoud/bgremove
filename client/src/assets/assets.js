@@ -1,5 +1,3 @@
-import logo from './logo.svg'
-import logo_icon from './logo_icon.svg'
 import arrow_icon from './arrow_icon.svg'
 import header_img from './header_img.png'
 import remove_bg_icon from './remove_bg_icon.svg'
@@ -16,10 +14,10 @@ import profile_img_2 from './profile_img_2.png'
 import credit_icon from './credit_icon.png'
 import failed from './failed.jpg'
 import sklogo from './sk.png'
+import a1t from './a1t.png'
+import a1 from './a1.png'
 
 export const assets = {
-    logo,
-    logo_icon,
     arrow_icon,
     header_img,
     remove_bg_icon,
@@ -33,7 +31,9 @@ export const assets = {
     upload_btn_icon,
     credit_icon,
     failed,
-    sklogo
+    sklogo,
+    a1t,
+    a1
 }
 
 export const testimonialsData = [
