@@ -10,7 +10,8 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   return (
-    <div className='min-h-screen bg-slate-50'>
+<div className='min-h-screen bg-gradient-to-br from-teal-50 to-cyan-50'>
+
         <ToastContainer position='bottom-right'/>
         <Navbar/>
         <Routes>

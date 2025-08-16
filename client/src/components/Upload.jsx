@@ -13,7 +13,7 @@ const Upload = () => {
         </h1>
         <div className="text-center mb-24">
             <input onChange={e=>{removeBg(e.target.file[0])}} type="file" accept="image/*" id="upload2" hidden/>
-            <label htmlFor="upload2" className="items-center inline-flex gap-3 px-8 py-3.5 rounded-full cursor-pointer bg-gradient-to-r from-violet-600 to-fuchsia-500 m-auto hover:scale-105 transition-all duration-700 hover:bg-gradient-to-l">
+            <label htmlFor="upload2" className="items-center inline-flex gap-3 px-8 py-3.5 rounded-full cursor-pointer bg-gradient-to-r from-cyan-400 to-teal-500 m-auto hover:scale-105 transition-all duration-700 hover:bg-gradient-to-l">
                 <img src={assets.upload_btn_icon} alt=""/>
                 <p className='text-white text-sm'>Upload your image</p>
             </label>

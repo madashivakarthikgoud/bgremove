@@ -9,7 +9,11 @@ const BuyCredit = () => {
       <div className="flex flex-wrap justify-center gap-6 text-left">
         {plans.map((item,index)=>(
           <div className="bg-white drop-shadow-sm  rounded-lg py-12 px-8 text-gray-700 hover:scale-105 transition-all duration-500">
-            <img width={40} src={assets.logo_icon} alt="" />
+                      <img
+                        className="w-19 sm:w-21 md:w-23 lg:w-28 h-auto object-contain -ml-4"
+                        src={assets.sklogo}
+                        alt="SK Logo"
+                      />
             <p className="mt-3 font-semibold">{item.id}</p>
             <p className="text-sm">{item.desc}</p>
             <p className="mt-6">
