@@ -1,7 +1,7 @@
 import express from 'express'
 import { clerkWebhooks, paymentRazorpay, userCredits, verifyRazorpay } from '../controllers/userController.js'
 import authUser from '../middlewares/auth.js'
-import paymentLink from 'razorpay/dist/types/paymentLink.js'
+
 
 const userRouter = express.Router()
 

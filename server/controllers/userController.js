@@ -2,7 +2,6 @@ import {messageInRaw, Svix, Webhook} from 'svix'
 import userModel from '../models/userModel.js'
 import razorpay from 'razorpay'
 import transactionModel from '../models/transactionModel.js'
-import payments from 'razorpay/dist/types/payments.js'
 
 //https://bgremovebysk.vercel.app/api/user/webhooks
 const clerkWebhooks = async (req,res)=>{
@@ -93,7 +92,7 @@ const paymentRazorpay = async (req,res) =>{
 
         const {clerkId,planId}=req.body
         const userData = await userModel.findOne({clerkId})
-        if(!userDAta || !planId){
+        if(!userData || !planId){
             return res.json({success:false,message:'invalid Credentials'})
         }
 

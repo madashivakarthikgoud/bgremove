@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import paymentLink from "razorpay/dist/types/paymentLink";
+
 
 const transactionSchema = new mongoose.Schema({
     clearId:{type:String, required:true},
