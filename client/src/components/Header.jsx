@@ -21,9 +21,24 @@ const Header = () => {
             </div>
         </div>
         {/*--- RightSide ---*/}
-        <div className="w-full max-w-md">
-            <img src={assets.header_img}/>
-        </div>
+<div className="w-full max-w-md">
+  <video
+    id="myVideo"
+    autoPlay
+    muted
+    playsInline
+    preload="auto"
+    loop
+    className="w-full h-90 object-cover object-top rounded-lg"
+  >
+    <source
+      src="https://cdn.removal.ai/banner.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
     </div>
   )
 }
